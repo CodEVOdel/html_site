@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "MyFont";              /* имя, которым будем пользоваться */
+  src: url("MyFont.woff2") format("woff2"),
+       url("MyFont.woff") format("woff");  /* пути к файлам */
+  font-weight: 400;                   /* можно указать веса */
+  font-style: normal;                 /* обычный / italic */
+  font-display: swap;                 /* как показывать текст при загрузке */
+}
+  /* font-family: "MyFont", sans-serif; */

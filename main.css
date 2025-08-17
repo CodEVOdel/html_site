@@ -1,0 +1,240 @@
+@import url(assets/css/_reset.css);
+@import url(assets/css/_fonts.css);
+@import url(assets/css/_animation.css);
+@import url(assets/css/_vars.css);
+
+body {
+    display: block;
+    width: 100vw;
+    height: 3000px;
+    scroll-behavior: auto;
+    font-family: Roboto, Arial, "sans-serif";
+    font-size: 14px;
+    /* background-color: aquamarine; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.page_header {
+    display: flex;
+    width: 100%;
+    max-height: 111px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 15px;
+    /* background-color: black; */
+}
+
+
+.header__logo {
+    background-size: cover;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+
+    & img {
+        width: 111px;
+        cursor: pointer;
+    }
+}
+
+.center_menu {
+    display: flex;
+    gap: 10px;
+    /* background-color: blue; */
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.center_menu li {
+    padding: 10px 20px;
+    position: relative;
+}
+
+li:hover .popup_menu {
+    display: block;
+}
+
+.center_menu li:hover {
+    cursor: pointer;
+    background-color: var(--accent-color);
+}
+
+.popup_menu {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    min-width: 150px;
+    background-color: aliceblue;
+    display: none;
+    z-index: 100;
+    /* border: 1px solid black; */
+}
+
+.popup_menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.help_phone {
+    display: flex;
+    height: 100%;
+    padding: 5px 10px;
+    padding-right: 50px;
+    /* background-color: aquamarine; */
+}
+
+.help_phone img {
+    box-sizing: border-box;
+    background-color: var(--accent-color);
+    padding: 7px;
+    border-radius: 50%;
+    height: 42px;
+}
+
+.phone_content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 5px;
+}
+
+.phone_content span {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.phone_content a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.section_contact_us::after {
+    position: absolute;
+    content: '';
+    background-color: #00000030;
+    width: 100%;
+    height: 100%;
+}
+
+.section_contact_us {
+    display: flex;
+    /* justify-content: center; */
+    align-items: end;
+    width: 100%;
+    height: 500px;
+    background-size: 100%;
+    background-image: url(assets/img/father_sun.jpg);
+    background-position: center;
+    background-position: top;
+    background-size: 0.7;
+}
+
+
+
+.section_contact_us span {
+    opacity: 0;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 25%;
+    z-index: 1;
+}
+
+
+.section_offices{
+    /* background-color:#ffa; */
+    width: 100%;
+    min-height: 570px;
+    
+}
+.section_offices h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding:50px 0;
+    text-transform: capitalize;
+    /* background-color: aqua; */
+    color: black;
+
+}
+.section_offices__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.section_offices__list-item{
+    padding: 10px 15px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section_offices__list-item h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.section_offices__list-item p{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 10px;
+    max-width: 60%;
+    color: #959595;
+}
+
+.section_offices__list-item_tel{
+    display: flex;
+    margin-top: 10px;
+}
+
+.section_offices__list-item_tel span{
+    font-style: italic;
+    color: #4a4a4a;
+}
+.section_offices__list-item_tel a{
+    font-weight: 100;
+    margin-left: 5px;
+    color: #959595;
+    text-decoration: none;
+    border-bottom:2px solid #ffc000;
+}
+
+
+
+
+.animation_fadeFontSize{
+    animation: fadeFontSize ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 50% exit 100%;
+}
+
+.animation_fadeBtm{
+    animation-name: fadeFromBottom;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timeline: view();
+    animation-range: entry 30% exit 100%;
+}
+
+.animation_fade {
+    animation: fadeIn 1s ease-out 1s forwards;
+    /* animation-timeline: view();
+    animation-range: entry 0% exit 100% ; */
+}
+
