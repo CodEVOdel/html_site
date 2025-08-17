@@ -215,21 +215,21 @@ li:hover .popup_menu {
     border-bottom:2px solid #ffc000;
 }
 
-
+.section_offices h1{
+    opacity: 0;
+}
 
 
 .animation_fadeFontSize{
-    animation: fadeFontSize ease-in forwards;
-    animation-timeline: view();
-    animation-range: entry 50% exit 100%;
+    animation: fadeFontSize 2s ease 1s forwards;
 }
 
 .animation_fadeBtm{
     animation-name: fadeFromBottom;
     animation-fill-mode: forwards;
     animation-direction: alternate;
-    animation-timeline: view();
-    animation-range: entry 30% exit 100%;
+    /* animation-timeline: view();
+    animation-range: entry 30% exit 100%; */
 }
 
 .animation_fade {
@@ -238,3 +238,6 @@ li:hover .popup_menu {
     animation-range: entry 0% exit 100% ; */
 }
 
+.animation_fade2{
+    animation: fadeIn2 1s ease 1s forwards;
+}
